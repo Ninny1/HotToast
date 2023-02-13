@@ -55,7 +55,7 @@ public class hotToastEx2Functions {
         answer = fixString(answer);
         if (answer.equals("none")) {
             System.out.println("Are you sure? [Yes/No]");
-            answer = scan.nextLine();
+
             answer = fixString(answer);
             if (answer.equals("yes")) {
                 toppings = false;
@@ -88,22 +88,15 @@ public class hotToastEx2Functions {
                         splitAnswer = answer.split("\\s*,\\s*");
                         continues = false;
                         break loop;
-
-
                     }
                 }
-
-
-
-
             }
             if (continues){
-                toppings = false;}
+                toppings = false;
+            }
         }
-
         return toppings3 + toppings4;
     }
-
 
 
     public static int drink() {
